@@ -8,6 +8,7 @@
 
 #import "VenuesVC.h"
 #import "JSONKit.h"
+#import "MainCell.h"
 
 @interface VenuesVC ()
 
@@ -66,10 +67,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"iCell";
+    MainCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    if (cell == nil) {
+        UIViewController *temporaryController = [[UIViewController alloc] initWithNibName:@"MainCell" bundle:nil];
+        cell = (MainCell *)temporaryController.view;
+    }
+    
+    NSDictionary *venue = [_venues objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
+
+    [[cell title] setText:[venue objectForKey:@"name"]];
+    [[cell image] setImage:[UIImage imageNamed:[venue objectForKey:@"photo"]]];
+    [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [venue objectForKey:@"rating"]]]];
     
     return cell;
 }
