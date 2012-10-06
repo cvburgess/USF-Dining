@@ -1,5 +1,5 @@
 //
-//  VenueVC.h
+//  ViewController.h
 //  USF Dining
 //
 //  Created by Charles Burgess on 10/6/12.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VenueVC : UIViewController
-
-@property (nonatomic, retain) NSDictionary *foods;
-@property (nonatomic, retain) NSString *venueID;
+@interface ViewController : UITableViewController
 
 @end

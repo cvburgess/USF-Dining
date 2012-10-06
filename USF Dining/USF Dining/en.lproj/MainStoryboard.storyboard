@@ -12,8 +12,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Background_Light.png" translatesAutoresizingMaskIntoConstraints="NO" id="sMv-Bi-5Z8"/>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eYs-fp-8l8">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="iCell" rowHeight="50" id="fCM-64-Jg8" customClass="MainCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="50"/>
@@ -22,7 +24,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-zJ-1Gc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="AppIcon114@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-zJ-1Gc">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="c3a-PC-503"/>
                                                         <constraint firstAttribute="height" constant="40" id="jVx-3C-EGu"/>
@@ -46,18 +48,17 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="mwn-iq-MKX" firstAttribute="leading" secondItem="7nq-zJ-1Gc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="51W-eD-n5f"/>
-                                            <constraint firstItem="7nq-zJ-1Gc" firstAttribute="leading" secondItem="fCM-64-Jg8" secondAttribute="leading" constant="5" id="6fd-U1-4Vr"/>
-                                            <constraint firstItem="7nq-zJ-1Gc" firstAttribute="bottom" secondItem="mwn-iq-MKX" secondAttribute="bottom" type="default" id="Jmm-yd-2fk"/>
-                                            <constraint firstItem="2JN-cG-2Hb" firstAttribute="top" secondItem="fCM-64-Jg8" secondAttribute="top" constant="3" id="Omr-22-lyI"/>
-                                            <constraint firstItem="2JN-cG-2Hb" firstAttribute="leading" secondItem="7nq-zJ-1Gc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ixB-zp-SCT"/>
-                                            <constraint firstItem="7nq-zJ-1Gc" firstAttribute="centerY" secondItem="fCM-64-Jg8" secondAttribute="centerY" type="default" id="jgy-Rp-frs"/>
+                                            <constraint firstItem="7nq-zJ-1Gc" firstAttribute="leading" secondItem="fCM-64-Jg8" secondAttribute="leading" constant="5" id="3ug-3A-u8B"/>
+                                            <constraint firstItem="mwn-iq-MKX" firstAttribute="bottom" secondItem="7nq-zJ-1Gc" secondAttribute="bottom" type="default" id="43C-S2-sPx"/>
+                                            <constraint firstItem="mwn-iq-MKX" firstAttribute="leading" secondItem="7nq-zJ-1Gc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Qbt-yv-zSF"/>
+                                            <constraint firstItem="2JN-cG-2Hb" firstAttribute="top" secondItem="fCM-64-Jg8" secondAttribute="top" constant="2" id="bSE-8X-R6O"/>
+                                            <constraint firstItem="2JN-cG-2Hb" firstAttribute="leading" secondItem="7nq-zJ-1Gc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="jY6-fy-ML2"/>
+                                            <constraint firstItem="7nq-zJ-1Gc" firstAttribute="centerY" secondItem="fCM-64-Jg8" secondAttribute="centerY" type="default" id="zXn-M2-PBy"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="image" destination="7nq-zJ-1Gc" id="VLg-a4-SzD"/>
                                             <outlet property="rating" destination="mwn-iq-MKX" id="lq2-et-Lab"/>
                                             <outlet property="title" destination="2JN-cG-2Hb" id="HLj-bn-ckw"/>
-                                            <segue destination="WuJ-n8-rZE" kind="push" id="SJ0-jI-Ynd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -69,13 +70,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eYs-fp-8l8" firstAttribute="leading" secondItem="Anl-py-Ckz" secondAttribute="leading" type="default" id="7j5-6P-rqA"/>
-                            <constraint firstItem="eYs-fp-8l8" firstAttribute="top" secondItem="Anl-py-Ckz" secondAttribute="top" type="default" id="uqW-IA-C6r"/>
-                            <constraint firstItem="eYs-fp-8l8" firstAttribute="bottom" secondItem="Anl-py-Ckz" secondAttribute="bottom" type="default" id="xN1-8i-8ob"/>
-                            <constraint firstItem="eYs-fp-8l8" firstAttribute="trailing" secondItem="Anl-py-Ckz" secondAttribute="trailing" type="default" id="y22-Ae-ooH"/>
+                            <constraint firstItem="eYs-fp-8l8" firstAttribute="trailing" secondItem="Anl-py-Ckz" secondAttribute="trailing" type="default" id="Nnf-9i-gxD"/>
+                            <constraint firstItem="eYs-fp-8l8" firstAttribute="bottom" secondItem="Anl-py-Ckz" secondAttribute="bottom" type="default" id="XDV-7a-Bkp"/>
+                            <constraint firstItem="eYs-fp-8l8" firstAttribute="top" secondItem="Anl-py-Ckz" secondAttribute="top" type="default" id="c9A-lk-uMt"/>
+                            <constraint firstItem="sMv-Bi-5Z8" firstAttribute="top" secondItem="Anl-py-Ckz" secondAttribute="top" type="default" id="fL4-bG-SFg"/>
+                            <constraint firstItem="sMv-Bi-5Z8" firstAttribute="bottom" secondItem="Anl-py-Ckz" secondAttribute="bottom" type="default" id="fdB-0Z-9O2"/>
+                            <constraint firstItem="sMv-Bi-5Z8" firstAttribute="leading" secondItem="Anl-py-Ckz" secondAttribute="leading" type="default" id="ybg-1M-Mhk"/>
+                            <constraint firstItem="eYs-fp-8l8" firstAttribute="leading" secondItem="Anl-py-Ckz" secondAttribute="leading" type="default" id="yz7-ID-4eV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FCe-aS-0La"/>
+                    <connections>
+                        <outlet property="table" destination="eYs-fp-8l8" id="64M-sL-XDI"/>
+                        <outlet property="view" destination="Anl-py-Ckz" id="Xqx-8Z-H8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDg-Sw-nst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +94,7 @@
             <objects>
                 <viewController id="WuJ-n8-rZE" customClass="VenueVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8K-NK-8ch">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-Fn-5u6">
@@ -134,7 +142,7 @@
                                             <outlet property="image" destination="N15-MR-WKd" id="r22-1w-8ns"/>
                                             <outlet property="rating" destination="yDw-jE-bd0" id="SSL-6U-3vP"/>
                                             <outlet property="title" destination="qpT-lf-YvZ" id="XV0-1X-Kfp"/>
-                                            <segue destination="iQR-FP-Omt" kind="push" id="duN-C3-fSX"/>
+                                            <segue destination="iQR-FP-Omt" kind="push" identifier="mainSegue" id="duN-C3-fSX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -171,7 +179,7 @@
             <objects>
                 <viewController id="iQR-FP-Omt" customClass="ReviewsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kb9-jE-Xav">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cK8-gr-d24">
@@ -252,7 +260,7 @@
                     <navigationItem key="navigationItem" id="xgL-JM-rgK">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="sE3-kP-T8m">
                             <connections>
-                                <segue destination="CxZ-kW-zxc" kind="push" id="ufd-JC-AmA"/>
+                                <segue destination="CxZ-kW-zxc" kind="push" identifier="mainSegue" id="ufd-JC-AmA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -266,7 +274,7 @@
             <objects>
                 <viewController id="CxZ-kW-zxc" customClass="NewReviewVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3G-bI-MEm">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-ry-qgG">
@@ -390,6 +398,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AppIcon114@2x.png" width="114" height="114"/>
+        <image name="Background_Light.png" width="320" height="568"/>
         <image name="StarUnSelected.png" width="44" height="44"/>
     </resources>
     <classes>
@@ -424,6 +434,9 @@
         </class>
         <class className="VenuesVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VenuesVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

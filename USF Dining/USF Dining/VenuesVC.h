@@ -11,5 +11,6 @@
 @interface VenuesVC : UIViewController
 
 @property (nonatomic, retain) NSDictionary *venues;
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end

@@ -9,6 +9,7 @@
 #import "VenuesVC.h"
 #import "JSONKit.h"
 #import "MainCell.h"
+#import "VenueVC.h"
 
 @interface VenuesVC ()
 
@@ -21,9 +22,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        [[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
-        
-        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
     }
     return self;
 }
@@ -31,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
     
     [self setVenues:[self getVenues]];
 	// Do any additional setup after loading the view.
@@ -87,5 +87,38 @@
     
     return cell;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"MainSegue"]) {
+        NSIndexPath *indexPath = [_table indexPathForSelectedRow];
+        
+        NSDictionary *venue = [_venues objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
+        
+        NSString *venueID = [venue objectForKey:@"id"];
+        
+        VenueVC *venueVC = [segue destinationViewController];
+        venueVC.venueID = venueID;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
+    NSDictionary *venue = [_venues objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
+    
+    NSString *venueID = [venue objectForKey:@"id"];
+    
+    VenueVC *venueVC = [[VenueVC alloc] initWithNibName:@"VenueVC" bundle:nil];
+    venueVC.venueID = venueID;
+    
+    [self.navigationController pushViewController:venueVC animated:YES];
+}
+
 
 @end
