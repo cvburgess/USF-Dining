@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--VenuesVC-->
         <scene sceneID="rEk-Ik-ELb">
             <objects>
-                <viewController id="V63-4j-WkS" sceneMemberID="viewController">
+                <viewController id="V63-4j-WkS" customClass="VenuesVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Anl-py-Ckz">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,6 +61,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="V63-4j-WkS" id="8QN-Re-TEh"/>
+                                    <outlet property="delegate" destination="V63-4j-WkS" id="Hp5-a8-JCV"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -77,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="961" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--VenueVC-->
         <scene sceneID="udE-NM-WJh">
             <objects>
-                <viewController id="WuJ-n8-rZE" sceneMemberID="viewController">
+                <viewController id="WuJ-n8-rZE" customClass="VenueVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8K-NK-8ch">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,6 +138,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WuJ-n8-rZE" id="pes-hg-2Nj"/>
+                                    <outlet property="delegate" destination="WuJ-n8-rZE" id="jQM-Cu-eMV"/>
+                                </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5D-ac-4L3">
                                 <constraints>
@@ -158,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="1411" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--ReviewsVC-->
         <scene sceneID="Acy-LA-Kum">
             <objects>
-                <viewController id="iQR-FP-Omt" sceneMemberID="viewController">
+                <viewController id="iQR-FP-Omt" customClass="ReviewsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kb9-jE-Xav">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -227,6 +235,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iQR-FP-Omt" id="YTh-ZQ-46J"/>
+                                    <outlet property="delegate" destination="iQR-FP-Omt" id="MzE-3m-daU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -249,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="1851" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--New ReviewVC-->
         <scene sceneID="Hgj-wE-1f2">
             <objects>
-                <viewController id="CxZ-kW-zxc" sceneMemberID="viewController">
+                <viewController id="CxZ-kW-zxc" customClass="NewReviewVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3G-bI-MEm">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -392,6 +404,9 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
+        <class className="NewReviewVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewReviewVC.h"/>
+        </class>
         <class className="ReviewCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ReviewCell.h"/>
             <relationships>
@@ -400,6 +415,15 @@
                 <relationship kind="outlet" name="reviewTxt" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
             </relationships>
+        </class>
+        <class className="ReviewsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReviewsVC.h"/>
+        </class>
+        <class className="VenueVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VenueVC.h"/>
+        </class>
+        <class className="VenuesVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VenuesVC.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
