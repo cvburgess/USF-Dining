@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306ECB1C1620C7EF000B95AE /* ReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306ECB1B1620C7EF000B95AE /* ReviewCell.m */; };
+		308E3E3E1620C71300747FA6 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308E3E3D1620C71300747FA6 /* MainCell.m */; };
 		308F984D16209A480051AEFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308F984C16209A480051AEFD /* UIKit.framework */; };
 		308F984F16209A480051AEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308F984E16209A480051AEFD /* Foundation.framework */; };
 		308F985116209A480051AEFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308F985016209A480051AEFD /* CoreGraphics.framework */; };
@@ -26,7 +28,7 @@
 		308F98941620B5F00051AEFD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98931620B5F00051AEFD /* Default-568h@2x.png */; };
 		308F989D1620BC260051AEFD /* Splash960x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F989B1620BC260051AEFD /* Splash960x640.png */; };
 		308F989E1620BC260051AEFD /* Splash960x640@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F989C1620BC260051AEFD /* Splash960x640@2x.png */; };
-		308F98A11620BF650051AEFD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F98A01620BF650051AEFD /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		308F98A11620BF650051AEFD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F98A01620BF650051AEFD /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		308F98A61620C0A00051AEFD /* StarSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98A21620C0A00051AEFD /* StarSelected.png */; };
 		308F98A71620C0A00051AEFD /* StarUnSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98A31620C0A00051AEFD /* StarUnSelected.png */; };
 		308F98A81620C0A00051AEFD /* StarUnSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98A41620C0A00051AEFD /* StarUnSelected@2x.png */; };
@@ -44,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		306ECB1A1620C7EF000B95AE /* ReviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewCell.h; sourceTree = "<group>"; };
+		306ECB1B1620C7EF000B95AE /* ReviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewCell.m; sourceTree = "<group>"; };
+		308E3E3C1620C71300747FA6 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
+		308E3E3D1620C71300747FA6 /* MainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCell.m; sourceTree = "<group>"; };
 		308F984816209A480051AEFD /* USF Dining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USF Dining.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		308F984C16209A480051AEFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		308F984E16209A480051AEFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -146,6 +152,10 @@
 				308F987E1620B1130051AEFD /* ReviewsVC.m */,
 				308F98801620B1270051AEFD /* NewReviewVC.h */,
 				308F98811620B1270051AEFD /* NewReviewVC.m */,
+				308E3E3C1620C71300747FA6 /* MainCell.h */,
+				308E3E3D1620C71300747FA6 /* MainCell.m */,
+				306ECB1A1620C7EF000B95AE /* ReviewCell.h */,
+				306ECB1B1620C7EF000B95AE /* ReviewCell.m */,
 				308F989F1620BF650051AEFD /* JSONKit.h */,
 				308F98A01620BF650051AEFD /* JSONKit.m */,
 				308F985316209A480051AEFD /* Supporting Files */,
@@ -314,6 +324,8 @@
 				308F987F1620B1130051AEFD /* ReviewsVC.m in Sources */,
 				308F98821620B1270051AEFD /* NewReviewVC.m in Sources */,
 				308F98A11620BF650051AEFD /* JSONKit.m in Sources */,
+				308E3E3E1620C71300747FA6 /* MainCell.m in Sources */,
+				306ECB1C1620C7EF000B95AE /* ReviewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +442,7 @@
 				308F987116209A480051AEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

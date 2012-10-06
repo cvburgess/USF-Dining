@@ -15,7 +15,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eYs-fp-8l8">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="50" id="fCM-64-Jg8">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="iCell" rowHeight="50" id="fCM-64-Jg8" customClass="MainCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -46,14 +46,17 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="mwn-iq-MKX" firstAttribute="leading" secondItem="7nq-zJ-1Gc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="51W-eD-n5f"/>
                                             <constraint firstItem="7nq-zJ-1Gc" firstAttribute="leading" secondItem="fCM-64-Jg8" secondAttribute="leading" constant="5" id="6fd-U1-4Vr"/>
                                             <constraint firstItem="7nq-zJ-1Gc" firstAttribute="bottom" secondItem="mwn-iq-MKX" secondAttribute="bottom" type="default" id="Jmm-yd-2fk"/>
                                             <constraint firstItem="2JN-cG-2Hb" firstAttribute="top" secondItem="fCM-64-Jg8" secondAttribute="top" constant="3" id="Omr-22-lyI"/>
                                             <constraint firstItem="2JN-cG-2Hb" firstAttribute="leading" secondItem="7nq-zJ-1Gc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ixB-zp-SCT"/>
                                             <constraint firstItem="7nq-zJ-1Gc" firstAttribute="centerY" secondItem="fCM-64-Jg8" secondAttribute="centerY" type="default" id="jgy-Rp-frs"/>
-                                            <constraint firstItem="mwn-iq-MKX" firstAttribute="leading" secondItem="fCM-64-Jg8" secondAttribute="leading" constant="52" id="use-Vw-vgL"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="image" destination="7nq-zJ-1Gc" id="VLg-a4-SzD"/>
+                                            <outlet property="rating" destination="mwn-iq-MKX" id="lq2-et-Lab"/>
+                                            <outlet property="title" destination="2JN-cG-2Hb" id="HLj-bn-ckw"/>
                                             <segue destination="WuJ-n8-rZE" kind="push" id="SJ0-jI-Ynd"/>
                                         </connections>
                                     </tableViewCell>
@@ -85,7 +88,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-Fn-5u6">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="wqJ-yf-fgd">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="iCell" rowHeight="50" id="wqJ-yf-fgd" customClass="MainCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -124,6 +127,9 @@
                                             <constraint firstItem="yDw-jE-bd0" firstAttribute="leading" secondItem="wqJ-yf-fgd" secondAttribute="leading" constant="52" id="wwB-Js-Vqd"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="image" destination="N15-MR-WKd" id="r22-1w-8ns"/>
+                                            <outlet property="rating" destination="yDw-jE-bd0" id="SSL-6U-3vP"/>
+                                            <outlet property="title" destination="qpT-lf-YvZ" id="XV0-1X-Kfp"/>
                                             <segue destination="iQR-FP-Omt" kind="push" id="duN-C3-fSX"/>
                                         </connections>
                                     </tableViewCell>
@@ -163,7 +169,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cK8-gr-d24">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="ksL-dl-gkL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="iCell" rowHeight="100" id="ksL-dl-gkL" customClass="ReviewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -213,6 +219,12 @@
                                             <constraint firstItem="NxB-t2-WVZ" firstAttribute="top" secondItem="ksL-dl-gkL" secondAttribute="top" constant="40" id="hVW-h1-hX7"/>
                                             <constraint firstItem="4t5-37-oLD" firstAttribute="top" secondItem="ksL-dl-gkL" secondAttribute="top" constant="5" id="y1J-PH-6sk"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="4t5-37-oLD" id="0Lm-Gf-EYG"/>
+                                            <outlet property="rating" destination="1f0-Gu-wdH" id="YfY-Fu-Jv0"/>
+                                            <outlet property="reviewTxt" destination="NxB-t2-WVZ" id="xqA-Xj-WFd"/>
+                                            <outlet property="title" destination="p5W-1z-wwJ" id="4NK-Xz-aHo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -369,8 +381,25 @@
         <image name="StarUnSelected.png" width="44" height="44"/>
     </resources>
     <classes>
+        <class className="MainCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="rating" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ReviewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReviewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="rating" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="reviewTxt" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

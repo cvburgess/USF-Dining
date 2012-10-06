@@ -1,5 +1,5 @@
 //
-//  VenuesVC.h
+//  StandardCell.h
 //  USF Dining
 //
 //  Created by Charles Burgess on 10/6/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VenuesVC : UIViewController
-
-@property (nonatomic, retain) NSDictionary *venues;
+@interface StandardCell : UITableViewCell
 
 @end
