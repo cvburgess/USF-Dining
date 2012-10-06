@@ -21,6 +21,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
+        
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
     }
     return self;
 }
@@ -62,6 +65,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"%i", [_venues count]);
     return [_venues count];
 }
 
@@ -78,7 +82,7 @@
     NSDictionary *venue = [_venues objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
 
     [[cell title] setText:[venue objectForKey:@"name"]];
-    [[cell image] setImage:[UIImage imageNamed:[venue objectForKey:@"photo"]]];
+    //[[cell image] setImage:[UIImage imageNamed:[venue objectForKey:@"photo"]]];
     [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [venue objectForKey:@"rating"]]]];
     
     return cell;

@@ -43,6 +43,8 @@
 		308F98C41620C1AB0051AEFD /* StarRate_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98BA1620C1AB0051AEFD /* StarRate_4@2x.png */; };
 		308F98C51620C1AB0051AEFD /* StarRate_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98BB1620C1AB0051AEFD /* StarRate_5.png */; };
 		308F98C61620C1AB0051AEFD /* StarRate_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308F98BC1620C1AB0051AEFD /* StarRate_5@2x.png */; };
+		308FCAF81620DB49009195B4 /* NavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 308FCAF61620DB49009195B4 /* NavBar.png */; };
+		308FCAF91620DB49009195B4 /* NavBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308FCAF71620DB49009195B4 /* NavBar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,8 @@
 		308F98BA1620C1AB0051AEFD /* StarRate_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarRate_4@2x.png"; sourceTree = "<group>"; };
 		308F98BB1620C1AB0051AEFD /* StarRate_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarRate_5.png; sourceTree = "<group>"; };
 		308F98BC1620C1AB0051AEFD /* StarRate_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarRate_5@2x.png"; sourceTree = "<group>"; };
+		308FCAF61620DB49009195B4 /* NavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBar.png; sourceTree = "<group>"; };
+		308FCAF71620DB49009195B4 /* NavBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 		308F98961620B8140051AEFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				308FCAF61620DB49009195B4 /* NavBar.png */,
+				308FCAF71620DB49009195B4 /* NavBar@2x.png */,
 				308F98AA1620C0A60051AEFD /* Stars */,
 				308F98931620B5F00051AEFD /* Default-568h@2x.png */,
 				308F98911620B5E40051AEFD /* Default@2x.png */,
@@ -291,6 +297,8 @@
 				308F98C41620C1AB0051AEFD /* StarRate_4@2x.png in Resources */,
 				308F98C51620C1AB0051AEFD /* StarRate_5.png in Resources */,
 				308F98C61620C1AB0051AEFD /* StarRate_5@2x.png in Resources */,
+				308FCAF81620DB49009195B4 /* NavBar.png in Resources */,
+				308FCAF91620DB49009195B4 /* NavBar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
