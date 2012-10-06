@@ -114,7 +114,7 @@
     
     NSString *venueID = [venue objectForKey:@"id"];
     
-    VenueVC *venueVC = [[VenueVC alloc] initWithNibName:@"VenueVC" bundle:nil];
+    VenueVC *venueVC = [[VenueVC alloc] init];
     venueVC.venueID = venueID;
     
     [self.navigationController pushViewController:venueVC animated:YES];

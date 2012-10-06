@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="944" y="64"/>
         </scene>
-        <!--VenueVC-->
+        <!--VenueVC - VenueVC-->
         <scene sceneID="udE-NM-WJh">
             <objects>
-                <viewController id="WuJ-n8-rZE" customClass="VenueVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VenueVC" title="VenueVC" id="WuJ-n8-rZE" customClass="VenueVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8K-NK-8ch">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
