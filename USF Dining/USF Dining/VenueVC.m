@@ -9,6 +9,7 @@
 #import "VenueVC.h"
 #import "JSONKit.h"
 #import "MainCell.h"
+#import "ReviewsVC.h"
 
 @interface VenueVC ()
 
@@ -31,6 +32,11 @@
     
     [self setFoods:[self getFoods]];
 	// Do any additional setup after loading the view.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [_table deselectRowAtIndexPath:[_table indexPathForSelectedRow] animated:animated];
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +74,11 @@
     return [_foods count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50.0;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"iCell";
@@ -78,12 +89,26 @@
         cell = (MainCell *)temporaryController.view;
     }
     
-    NSDictionary *venue = [_foods objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
+    NSDictionary *food = [_foods objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
     
-    [[cell title] setText:[venue objectForKey:@"name"]];
-    //[[cell image] setImage:[UIImage imageNamed:[venue objectForKey:@"photo"]]];
-    [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [venue objectForKey:@"rating"]]]];
+    [[cell title] setText:[food objectForKey:@"name"]];
+    //[[cell image] setImage:[UIImage imageNamed:[food objectForKey:@"photo"]]];
+    [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [food objectForKey:@"rating"]]]];
     
     return cell;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"MainSegue"]) {
+        NSIndexPath *indexPath = [_table indexPathForSelectedRow];
+        
+        NSDictionary *food = [_foods objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
+        
+        NSString *foodID = [food objectForKey:@"id"];
+        
+        ReviewsVC *reviewsVC = [segue destinationViewController];
+        reviewsVC.foodID = foodID;
+    }
+}
+
 @end
