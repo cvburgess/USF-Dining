@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self setReviews:[self getReviews]];
 	// Do any additional setup after loading the view.
 }
 
@@ -42,7 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSDictionary*)getreviews
+- (NSDictionary*)getReviews
 {
     NSDictionary *reviews = [[NSDictionary alloc] init];
     
@@ -68,31 +70,55 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSLog(@"%i", [_reviews count]);
-    return [_reviews count];
+    return [_reviews count]+1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50.0;
+    if ([indexPath row] == 0) {
+        return 50.0;
+    }
+    else {
+        return 100.0;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"iCell";
-    ReviewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    if (cell == nil) {
-        UIViewController *temporaryController = [[UIViewController alloc] initWithNibName:@"ReviewCell" bundle:nil];
-        cell = (ReviewCell *)temporaryController.view;
+    if ([indexPath row] == 0)
+    {
+        static NSString *CellIdentifier = @"newCell";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        if (cell == nil) {
+            UIViewController *temporaryController = [[UIViewController alloc] initWithNibName:@"UITableViewCell" bundle:nil];
+            cell = (UITableViewCell *)temporaryController.view;
+        }
+        
+        return cell;
     }
-    
-    NSDictionary *review = [_reviews objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
-    
-    [[cell title] setText:[review objectForKey:@"name"]];
-    //[[cell image] setImage:[UIImage imageNamed:[review objectForKey:@"photo"]]];
-    [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [review objectForKey:@"rating"]]]];
-    
-    return cell;
+    else
+    {
+        static NSString *CellIdentifier = @"iCell";
+        
+        ReviewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        if (cell == nil) {
+            UIViewController *temporaryController = [[UIViewController alloc] initWithNibName:@"ReviewCell" bundle:nil];
+            cell = (ReviewCell *)temporaryController.view;
+        }
+        
+        NSDictionary *review = [_reviews objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]-1]];
+        
+        [[cell title] setText:@"Charles B."];//[review objectForKey:@"name"]];
+        [[cell reviewTxt] setText:[review objectForKey:@"text"]];
+        //[[cell image] setImage:[UIImage imageNamed:[review objectForKey:@"photo"]]];
+        [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [review objectForKey:@"rating"]]]];
+        
+        return cell;
+    }
 }
 
 @end

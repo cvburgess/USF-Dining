@@ -12,6 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:0.02 green:0.141 blue:0.09 alpha:1]];
+    
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
     
     return YES;
