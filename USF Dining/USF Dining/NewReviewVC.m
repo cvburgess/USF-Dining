@@ -35,4 +35,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)rate:(id)sender {
+    [self setStars:[sender tag]];
+    
+    for (UIButton *button in [[self view] subviews])
+    {
+        if([button isKindOfClass:[UIButton class]])
+        {
+            if ([button tag] <= [sender tag])
+            {
+                [button setImage:[UIImage imageNamed:@"StarSelected"] forState:UIControlStateNormal];
+            }
+            else
+            {
+                [button setImage:[UIImage imageNamed:@"StarUnSelected"] forState:UIControlStateNormal];
+            }
+        }
+    }
+}
+
 @end

@@ -10,4 +10,8 @@
 
 @interface NewReviewVC : UIViewController
 
+@property (nonatomic, assign) NSInteger stars;
+
+- (IBAction)rate:(id)sender;
+
 @end
