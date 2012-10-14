@@ -29,14 +29,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self setFoods:[self getFoods]];
-	// Do any additional setup after loading the view.
+    [self setFoods:[self getFoods]];    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     [_table deselectRowAtIndexPath:[_table indexPathForSelectedRow] animated:animated];
     [super viewWillAppear:animated];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    
+    float sHeight;
+    
+    if ([[UIScreen mainScreen] bounds].size.height == 480.00) { // iPhone 3.5 display
+        if ([_foods count] <= 4) {
+            sHeight = 416;
+        }
+        else {
+            sHeight = 170 + (50 * [_foods count]); // header (150) + table padding (20px) + row height (50) * number of foods
+        }
+    }
+    
+    else {
+        if ([_foods count] <= 6) {
+            sHeight = 504;
+        }
+        else {
+            sHeight = 170 + (50 * [_foods count]);
+        }
+    }
+    
+    [_mainScroll setContentSize:CGSizeMake(320, sHeight)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,8 +73,6 @@
     NSDictionary *foods = [[NSDictionary alloc] init];
     
     NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdining.aws.af.cm/%@/food/", _venueID];
-    
-    NSLog(jsonUrl);
     
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
     
@@ -70,7 +91,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%i", [_foods count]);
     return [_foods count];
 }
 
@@ -100,6 +120,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"MainSegue"]) {
+        
         NSIndexPath *indexPath = [_table indexPathForSelectedRow];
         
         NSDictionary *food = [_foods objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
