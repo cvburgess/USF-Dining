@@ -49,7 +49,7 @@
 {
     NSDictionary *venues = [[NSDictionary alloc] init];
    
-    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdining.aws.af.cm/venues/"];
+    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdiningapp.com/venues/"];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
     
@@ -68,7 +68,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%i", [_venues count]);
     return [_venues count];
 }
 

@@ -48,9 +48,7 @@
 {
     NSDictionary *reviews = [[NSDictionary alloc] init];
     
-    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdining.aws.af.cm/%@/reviews/", _foodID];
-    
-    NSLog(jsonUrl);
+    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdiningapp.com/%@/reviews/", _foodID];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
     
@@ -69,7 +67,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%i", [_reviews count]);
     return [_reviews count]+1;
 }
 

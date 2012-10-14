@@ -72,7 +72,7 @@
 {
     NSDictionary *foods = [[NSDictionary alloc] init];
     
-    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdining.aws.af.cm/%@/food/", _venueID];
+    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdiningapp.com/%@/food/", _venueID];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
     
