@@ -61,7 +61,7 @@ shouldUnscheduleURLOnReuse  = _shouldUnscheduleURLOnReuse;
     if (self) {
         self.autoresizeEnabled = NO;
         self.contentScaleFactor = [UIScreen mainScreen].scale;
-        self.contentMode = UIViewContentModeScaleAspectFit;
+        self.contentMode = UIViewContentModeScaleToFill;
     }
     return self;
 }
@@ -70,7 +70,7 @@ shouldUnscheduleURLOnReuse  = _shouldUnscheduleURLOnReuse;
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
     if (self) {
-        self.contentMode = UIViewContentModeScaleAspectFit;
+        self.contentMode = UIViewContentModeScaleToFill;
     }
     return self;
 }

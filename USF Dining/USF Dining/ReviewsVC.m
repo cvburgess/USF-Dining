@@ -28,9 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self setReviews:[self getReviews]];
-	// Do any additional setup after loading the view.
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -62,6 +60,9 @@
     
     [_mainScroll setContentSize:CGSizeMake(320, sHeight)];
     
+    //NSURL *photoURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://usfdiningapp/%@/headerImage", _foodID]];
+    [_headerImage loadImageAtURL:[NSURL URLWithString:@"http://moralauthority.files.wordpress.com/2008/06/salmon.jpg"] placeholderImage:[UIImage imageNamed:@"Tomato_Pasta_Penne.jpg"]];
+    
     [super viewDidAppear:animated];
 }
 
@@ -75,7 +76,7 @@
 {
     NSDictionary *reviews = [[NSDictionary alloc] init];
     
-    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdiningapp.com/%@/reviews/", _foodID];
+    NSString *jsonUrl = [NSString stringWithFormat:@"http://usfdiningapp.com/food/%@/reviews/", _foodID];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
     

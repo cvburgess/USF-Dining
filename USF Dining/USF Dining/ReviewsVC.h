@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLImageView.h"
 
 @interface ReviewsVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet FLImageView *headerImage;
 @property (nonatomic, retain) NSDictionary *reviews;
 @property (nonatomic, retain) NSString *foodID;
 @property (weak, nonatomic) IBOutlet UITableView *table;

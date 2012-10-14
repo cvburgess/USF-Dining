@@ -10,6 +10,8 @@
 
 @interface VenueVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *headerImage;
+@property (weak, nonatomic) IBOutlet UILabel *headerText;
 @property (nonatomic, retain) NSDictionary *foods;
 @property (nonatomic, retain) NSString *venueID;
 @property (weak, nonatomic) IBOutlet UITableView *table;
