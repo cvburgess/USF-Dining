@@ -13,5 +13,6 @@
 @property (nonatomic, retain) NSDictionary *reviews;
 @property (nonatomic, retain) NSString *foodID;
 @property (weak, nonatomic) IBOutlet UITableView *table;
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScroll;
 
 @end

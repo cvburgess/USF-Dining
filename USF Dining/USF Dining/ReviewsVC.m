@@ -38,6 +38,33 @@
     [super viewWillAppear:animated];
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    
+    float sHeight;
+    
+    if ([[UIScreen mainScreen] bounds].size.height == 480.00) { // iPhone 3.5 display
+        if ([_reviews count] <= 1) {
+            sHeight = 416;
+        }
+        else {
+            sHeight = 220 + (100 * [_reviews count]); // header (150) + table padding (20) + row1 (50) + row height (100) * number of foods
+        }
+    }
+    
+    else {
+        if ([_reviews count] <= 2) {
+            sHeight = 504;
+        }
+        else {
+            sHeight = 220 + (100 * [_reviews count]);
+        }
+    }
+    
+    [_mainScroll setContentSize:CGSizeMake(320, sHeight)];
+    
+    [super viewDidAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -60,6 +60,8 @@
     }
     
     [_mainScroll setContentSize:CGSizeMake(320, sHeight)];
+    
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
