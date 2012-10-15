@@ -46,7 +46,7 @@
             {
                 [button setImage:[UIImage imageNamed:@"StarSelected"] forState:UIControlStateNormal];
             }
-            else
+            else if ([button tag] < 6)
             {
                 [button setImage:[UIImage imageNamed:@"StarUnSelected"] forState:UIControlStateNormal];
             }
