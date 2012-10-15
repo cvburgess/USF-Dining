@@ -29,7 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setFoods:[self getFoods]];    
+    [_headerText setText:_venueInfo];
+    [self setFoods:[self getFoods]];
 }
 
 - (void) viewWillAppear:(BOOL)animated {

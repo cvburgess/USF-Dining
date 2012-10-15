@@ -61,7 +61,7 @@
     [_mainScroll setContentSize:CGSizeMake(320, sHeight)];
     
     //NSURL *photoURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://usfdiningapp/%@/headerImage", _foodID]];
-    [_headerImage loadImageAtURL:[NSURL URLWithString:@"http://moralauthority.files.wordpress.com/2008/06/salmon.jpg"] placeholderImage:[UIImage imageNamed:@"Tomato_Pasta_Penne.jpg"]];
+    [_headerImage loadImageAtURL:[NSURL URLWithString:@"http://blogs.nationalgeographic.com/blogs/intelligenttravel/GeorgiaFood.JPG"] placeholderImage:[UIImage imageNamed:@"Tomato_Pasta_Penne.jpg"]];
     
     [super viewDidAppear:animated];
 }

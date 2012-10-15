@@ -29,9 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self setVenues:[self getVenues]];
-	// Do any additional setup after loading the view.
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -100,11 +98,22 @@
         NSIndexPath *indexPath = [_table indexPathForSelectedRow];
         
         NSDictionary *venue = [_venues objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
+        NSString *currency = @"priceBB";
         
+        CFAbsoluteTime at = CFAbsoluteTimeGetCurrent();
+        CFTimeZoneRef tz = CFTimeZoneCopySystem();
+        SInt32 WeekdayNumber = CFAbsoluteTimeGetDayOfWeek(at, tz);
+        
+        NSString *day = [NSString stringWithFormat:@"%lihrs", WeekdayNumber];
+        
+        NSString *hours = [NSString stringWithFormat:@"%i:%@ - %i:%@", [[[venue objectForKey:day] substringWithRange:NSMakeRange(0,2)] intValue], [[venue objectForKey:day] substringWithRange:NSMakeRange(2,2)], [[[venue objectForKey:day] substringWithRange:NSMakeRange(4,2)] intValue], [[venue objectForKey:day] substringWithRange:NSMakeRange(6,2)]];
+        
+        NSString *venueInfo = [NSString stringWithFormat:@"%@      %@", hours, [venue objectForKey:currency]];
         NSString *venueID = [venue objectForKey:@"id"];
         
         VenueVC *venueVC = [segue destinationViewController];
         venueVC.venueID = venueID;
+        venueVC.venueInfo = venueInfo;
     }
 }
 
