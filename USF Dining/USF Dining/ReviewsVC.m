@@ -61,7 +61,7 @@
     [_mainScroll setContentSize:CGSizeMake(320, sHeight)];
     
     //NSURL *photoURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://usfdiningapp/%@/headerImage", _foodID]];
-    [_headerImage loadImageAtURL:[NSURL URLWithString:@"http://blogs.nationalgeographic.com/blogs/intelligenttravel/GeorgiaFood.JPG"] placeholderImage:[UIImage imageNamed:@"Tomato_Pasta_Penne.jpg"]];
+    [_headerImage loadImageAtURL:[NSURL URLWithString:@"http://.jpg"] placeholderImage:[UIImage imageNamed:@"Tomato_Pasta_Penne.jpg"]];
     
     [super viewDidAppear:animated];
 }
@@ -140,7 +140,7 @@
         [[cell title] setText:@"Charles B."];//[review objectForKey:@"name"]];
         [[cell reviewTxt] setText:[review objectForKey:@"text"]];
         //[[cell image] setImage:[UIImage imageNamed:[review objectForKey:@"photo"]]];
-        [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [review objectForKey:@"rating"]]]];
+        [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRateVert%@", [review objectForKey:@"rating"]]]];
         
         return cell;
     }
