@@ -115,8 +115,26 @@
     NSDictionary *food = [_foods objectForKey:[NSString stringWithFormat:@"%i", [indexPath row]]];
     
     [[cell title] setText:[food objectForKey:@"name"]];
-    //[[cell image] setImage:[UIImage imageNamed:[food objectForKey:@"photo"]]];
     [[cell rating] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"StarRate_%@", [food objectForKey:@"rating"]]]];
+    
+    if ([indexPath row] == 0) {
+        [[cell image] setImage:[UIImage imageNamed:@"RaspberryCake.jpg"]];
+    }
+    else if ([indexPath row] == 1) {
+        [[cell image] setImage:[UIImage imageNamed:@"ChickenSandwhich.jpg"]];
+    }
+    else if ([indexPath row] == 2) {
+        [[cell image] setImage:[UIImage imageNamed:@"ChocolateCake.jpg"]];
+    }
+    else if ([indexPath row] == 3) {
+        [[cell image] setImage:[UIImage imageNamed:@"Tacos.jpg"]];
+    }
+    else if ([indexPath row] == 4) {
+        [[cell image] setImage:[UIImage imageNamed:@"PastaMeatSauce.jpg"]];
+    }
+    else {
+        [[cell image] setImage:[UIImage imageNamed:@"RaspberryCake.jpg"]];
+    }
     
     return cell;
 }

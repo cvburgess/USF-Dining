@@ -30,6 +30,25 @@
 		3060A754162BC98C0023AC45 /* Muffins@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A751162BC98C0023AC45 /* Muffins@2x.jpg */; };
 		3060A755162BC98C0023AC45 /* PastaMeatSauce@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A752162BC98C0023AC45 /* PastaMeatSauce@2x.jpg */; };
 		3060A756162BC98C0023AC45 /* Cookies@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A753162BC98C0023AC45 /* Cookies@2x.jpg */; };
+		3060A76B162C32DC0023AC45 /* BurritoBeef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A758162C32DC0023AC45 /* BurritoBeef.jpg */; };
+		3060A76C162C32DC0023AC45 /* ChickenSandwhich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A759162C32DC0023AC45 /* ChickenSandwhich.jpg */; };
+		3060A76D162C32DC0023AC45 /* ChocolateCake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A75A162C32DC0023AC45 /* ChocolateCake.jpg */; };
+		3060A76E162C32DC0023AC45 /* Cookies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A75B162C32DC0023AC45 /* Cookies.jpg */; };
+		3060A76F162C32DC0023AC45 /* LettuceSalad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A75C162C32DC0023AC45 /* LettuceSalad.jpg */; };
+		3060A770162C32DC0023AC45 /* Muffins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A75D162C32DC0023AC45 /* Muffins.jpg */; };
+		3060A771162C32DC0023AC45 /* PastaMeatSauce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A75E162C32DC0023AC45 /* PastaMeatSauce.jpg */; };
+		3060A772162C32DC0023AC45 /* RaspberryCake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A75F162C32DC0023AC45 /* RaspberryCake.jpg */; };
+		3060A773162C32DC0023AC45 /* TacoMarinara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A760162C32DC0023AC45 /* TacoMarinara.jpg */; };
+		3060A774162C32DC0023AC45 /* Tacos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A761162C32DC0023AC45 /* Tacos.jpg */; };
+		3060A775162C32DC0023AC45 /* TurkeySandwhich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A762162C32DC0023AC45 /* TurkeySandwhich.jpg */; };
+		3060A776162C32DC0023AC45 /* LettuceSalad@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A763162C32DC0023AC45 /* LettuceSalad@2x.jpg */; };
+		3060A777162C32DC0023AC45 /* BurritoBeef@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A764162C32DC0023AC45 /* BurritoBeef@2x.jpg */; };
+		3060A778162C32DC0023AC45 /* ChickenSandwhich@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A765162C32DC0023AC45 /* ChickenSandwhich@2x.jpg */; };
+		3060A779162C32DC0023AC45 /* ChocolateCake@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A766162C32DC0023AC45 /* ChocolateCake@2x.jpg */; };
+		3060A77A162C32DC0023AC45 /* TurkeySandwhich@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A767162C32DC0023AC45 /* TurkeySandwhich@2x.jpg */; };
+		3060A77B162C32DC0023AC45 /* TacoMarinara@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A768162C32DC0023AC45 /* TacoMarinara@2x.jpg */; };
+		3060A77C162C32DC0023AC45 /* Tacos@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A769162C32DC0023AC45 /* Tacos@2x.jpg */; };
+		3060A77D162C32DC0023AC45 /* RaspberryCake@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3060A76A162C32DC0023AC45 /* RaspberryCake@2x.jpg */; };
 		306ECB1C1620C7EF000B95AE /* ReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306ECB1B1620C7EF000B95AE /* ReviewCell.m */; };
 		308E3E3E1620C71300747FA6 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308E3E3D1620C71300747FA6 /* MainCell.m */; };
 		308F984D16209A480051AEFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308F984C16209A480051AEFD /* UIKit.framework */; };
@@ -100,6 +119,25 @@
 		3060A751162BC98C0023AC45 /* Muffins@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Muffins@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/Muffins@2x.jpg"; sourceTree = "<group>"; };
 		3060A752162BC98C0023AC45 /* PastaMeatSauce@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "PastaMeatSauce@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/PastaMeatSauce@2x.jpg"; sourceTree = "<group>"; };
 		3060A753162BC98C0023AC45 /* Cookies@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Cookies@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/Cookies@2x.jpg"; sourceTree = "<group>"; };
+		3060A758162C32DC0023AC45 /* BurritoBeef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BurritoBeef.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/BurritoBeef.jpg; sourceTree = "<group>"; };
+		3060A759162C32DC0023AC45 /* ChickenSandwhich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ChickenSandwhich.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/ChickenSandwhich.jpg; sourceTree = "<group>"; };
+		3060A75A162C32DC0023AC45 /* ChocolateCake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ChocolateCake.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/ChocolateCake.jpg; sourceTree = "<group>"; };
+		3060A75B162C32DC0023AC45 /* Cookies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cookies.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/Cookies.jpg; sourceTree = "<group>"; };
+		3060A75C162C32DC0023AC45 /* LettuceSalad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LettuceSalad.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/LettuceSalad.jpg; sourceTree = "<group>"; };
+		3060A75D162C32DC0023AC45 /* Muffins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Muffins.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/Muffins.jpg; sourceTree = "<group>"; };
+		3060A75E162C32DC0023AC45 /* PastaMeatSauce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PastaMeatSauce.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/PastaMeatSauce.jpg; sourceTree = "<group>"; };
+		3060A75F162C32DC0023AC45 /* RaspberryCake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RaspberryCake.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/RaspberryCake.jpg; sourceTree = "<group>"; };
+		3060A760162C32DC0023AC45 /* TacoMarinara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TacoMarinara.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/TacoMarinara.jpg; sourceTree = "<group>"; };
+		3060A761162C32DC0023AC45 /* Tacos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Tacos.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/Tacos.jpg; sourceTree = "<group>"; };
+		3060A762162C32DC0023AC45 /* TurkeySandwhich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TurkeySandwhich.jpg; path = ../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/TurkeySandwhich.jpg; sourceTree = "<group>"; };
+		3060A763162C32DC0023AC45 /* LettuceSalad@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "LettuceSalad@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/LettuceSalad@2x.jpg"; sourceTree = "<group>"; };
+		3060A764162C32DC0023AC45 /* BurritoBeef@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "BurritoBeef@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/BurritoBeef@2x.jpg"; sourceTree = "<group>"; };
+		3060A765162C32DC0023AC45 /* ChickenSandwhich@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ChickenSandwhich@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/ChickenSandwhich@2x.jpg"; sourceTree = "<group>"; };
+		3060A766162C32DC0023AC45 /* ChocolateCake@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ChocolateCake@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/ChocolateCake@2x.jpg"; sourceTree = "<group>"; };
+		3060A767162C32DC0023AC45 /* TurkeySandwhich@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "TurkeySandwhich@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/TurkeySandwhich@2x.jpg"; sourceTree = "<group>"; };
+		3060A768162C32DC0023AC45 /* TacoMarinara@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "TacoMarinara@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/TacoMarinara@2x.jpg"; sourceTree = "<group>"; };
+		3060A769162C32DC0023AC45 /* Tacos@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Tacos@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/Tacos@2x.jpg"; sourceTree = "<group>"; };
+		3060A76A162C32DC0023AC45 /* RaspberryCake@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RaspberryCake@2x.jpg"; path = "../../../../../../Dropbox/USFDining/DanielDesigns/Food/300x300/RaspberryCake@2x.jpg"; sourceTree = "<group>"; };
 		306ECB1A1620C7EF000B95AE /* ReviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewCell.h; sourceTree = "<group>"; };
 		306ECB1B1620C7EF000B95AE /* ReviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewCell.m; sourceTree = "<group>"; };
 		308E3E3C1620C71300747FA6 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
@@ -196,6 +234,25 @@
 		3060A757162BC9910023AC45 /* FauxFoods */ = {
 			isa = PBXGroup;
 			children = (
+				3060A758162C32DC0023AC45 /* BurritoBeef.jpg */,
+				3060A759162C32DC0023AC45 /* ChickenSandwhich.jpg */,
+				3060A75A162C32DC0023AC45 /* ChocolateCake.jpg */,
+				3060A75B162C32DC0023AC45 /* Cookies.jpg */,
+				3060A75C162C32DC0023AC45 /* LettuceSalad.jpg */,
+				3060A75D162C32DC0023AC45 /* Muffins.jpg */,
+				3060A75E162C32DC0023AC45 /* PastaMeatSauce.jpg */,
+				3060A75F162C32DC0023AC45 /* RaspberryCake.jpg */,
+				3060A760162C32DC0023AC45 /* TacoMarinara.jpg */,
+				3060A761162C32DC0023AC45 /* Tacos.jpg */,
+				3060A762162C32DC0023AC45 /* TurkeySandwhich.jpg */,
+				3060A763162C32DC0023AC45 /* LettuceSalad@2x.jpg */,
+				3060A764162C32DC0023AC45 /* BurritoBeef@2x.jpg */,
+				3060A765162C32DC0023AC45 /* ChickenSandwhich@2x.jpg */,
+				3060A766162C32DC0023AC45 /* ChocolateCake@2x.jpg */,
+				3060A767162C32DC0023AC45 /* TurkeySandwhich@2x.jpg */,
+				3060A768162C32DC0023AC45 /* TacoMarinara@2x.jpg */,
+				3060A769162C32DC0023AC45 /* Tacos@2x.jpg */,
+				3060A76A162C32DC0023AC45 /* RaspberryCake@2x.jpg */,
 				3060A751162BC98C0023AC45 /* Muffins@2x.jpg */,
 				3060A752162BC98C0023AC45 /* PastaMeatSauce@2x.jpg */,
 				3060A753162BC98C0023AC45 /* Cookies@2x.jpg */,
@@ -433,6 +490,25 @@
 				3060A754162BC98C0023AC45 /* Muffins@2x.jpg in Resources */,
 				3060A755162BC98C0023AC45 /* PastaMeatSauce@2x.jpg in Resources */,
 				3060A756162BC98C0023AC45 /* Cookies@2x.jpg in Resources */,
+				3060A76B162C32DC0023AC45 /* BurritoBeef.jpg in Resources */,
+				3060A76C162C32DC0023AC45 /* ChickenSandwhich.jpg in Resources */,
+				3060A76D162C32DC0023AC45 /* ChocolateCake.jpg in Resources */,
+				3060A76E162C32DC0023AC45 /* Cookies.jpg in Resources */,
+				3060A76F162C32DC0023AC45 /* LettuceSalad.jpg in Resources */,
+				3060A770162C32DC0023AC45 /* Muffins.jpg in Resources */,
+				3060A771162C32DC0023AC45 /* PastaMeatSauce.jpg in Resources */,
+				3060A772162C32DC0023AC45 /* RaspberryCake.jpg in Resources */,
+				3060A773162C32DC0023AC45 /* TacoMarinara.jpg in Resources */,
+				3060A774162C32DC0023AC45 /* Tacos.jpg in Resources */,
+				3060A775162C32DC0023AC45 /* TurkeySandwhich.jpg in Resources */,
+				3060A776162C32DC0023AC45 /* LettuceSalad@2x.jpg in Resources */,
+				3060A777162C32DC0023AC45 /* BurritoBeef@2x.jpg in Resources */,
+				3060A778162C32DC0023AC45 /* ChickenSandwhich@2x.jpg in Resources */,
+				3060A779162C32DC0023AC45 /* ChocolateCake@2x.jpg in Resources */,
+				3060A77A162C32DC0023AC45 /* TurkeySandwhich@2x.jpg in Resources */,
+				3060A77B162C32DC0023AC45 /* TacoMarinara@2x.jpg in Resources */,
+				3060A77C162C32DC0023AC45 /* Tacos@2x.jpg in Resources */,
+				3060A77D162C32DC0023AC45 /* RaspberryCake@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
